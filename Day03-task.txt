@@ -1,0 +1,128 @@
+Question-1
+1)For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+a)for loop
+
+var arr = [ 
+{"id":"1", "name": "Jack"}, 
+{"id":"2", "name": "Robert"},
+{"id":"3", "name": "Steve"}
+];
+    
+for(var i = 0; i < arr.length; i++){
+  var obj = arr[i];
+  for (var key in obj){
+    var value = obj[key];
+    console.log(key + ": " + value);
+  }
+}
+
+
+b) for in loop
+
+var person = {fname:"John", lname:"wick", age:25};
+var text = "";
+var x;
+for (x in person) {
+  text += person[x] + " ";
+}
+console.log(text);
+
+
+c) for of loop
+
+var mycars = [{name:'John'}, {name:'BMW'}];
+
+for (var car of mycars) 
+{
+  console.log(car.name);
+}
+
+
+d) forEach
+
+const arr = ["a", "b", "c"];
+ arr.forEach((element) => {
+    console.log(element);
+});
+
+
+Question-2
+2)Create your own resume data in JSON format
+
+{
+  "basics": {
+    "name": "Dharani kumar",
+    "label": "Programmer",
+    "email": "john@gmail.com",
+    "phone": "9876-555-4321",
+    "url": "https://dharanikumar.com",
+    "summary": "A summary of dharanikumar",
+    "location": {
+      "address": "27 Street",
+      "postalCode": "94115",
+      "city": "Erode",
+      "countryCode": "IN",
+      "region": "INDIA"
+    },
+    "profiles": [{
+      "network": "Twitter",
+      "username": "Dharani",
+      "url": "https://twitter.com/Dharani"
+    }]
+  },
+  }],
+  "education": [{
+    "institution": "Anna University",
+    "url": "https://Anna Univercity.com/",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2021-01-01",
+    "endDate": "2021-10-01",
+    "score": "4.0",
+    "courses": [
+      "web development" : "Basics"
+    ]
+  }],
+  }],
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "NODEJS",
+]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Photography",
+    "keywords": [
+      "Dogs",
+      "Cats"
+    ]
+  }],
+  "projects": [{
+    "name": "HEAT TRANSFER ANALYSIS OF PIN FIN ARRAY",
+    "description": "Heat transfer analysis",
+    "highlights": [
+      "Won award at 2019"
+    ],
+    "keywords": [
+      "FULL STACK"
+    ],
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "url": "https://project.com/",
+    "roles": [
+      "Fresher"
+    ],
+    "entity": "Entity",
+    "type": "application"
+  }]
+}
